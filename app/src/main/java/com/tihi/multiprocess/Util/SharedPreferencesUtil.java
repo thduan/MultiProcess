@@ -31,7 +31,6 @@ public class SharedPreferencesUtil {
     }
 
     public static void save(String key, String value) {
-        Util.printCurProThr();
         SharedPreferences sharedPreferences = App.instance().getSharedPreferences(PREFERENCE_FILE, 0);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString(key, value);
@@ -39,7 +38,6 @@ public class SharedPreferencesUtil {
     }
 
     public static String get(String key) {
-        Util.printCurProThr();
         SharedPreferences sharedPreferences = App.instance().getSharedPreferences(PREFERENCE_FILE, 0);
         return sharedPreferences.getString(key, "");
     }

@@ -72,7 +72,9 @@ public class MainActivity extends FragmentActivity {
 
     @OnClick(R.id.test_share_btn)
     private void testShare(View view) {
-        SharedPreferencesUtil.instance().save(SharedPreferencesUtil.Keys.DEMO_TEST_KEY, "thisIsATest");
+        String shareV = "thisIsATest";
+        Logger.log(TAG_PREFIX + ", 存入share值：" + shareV);
+        SharedPreferencesUtil.instance().save(SharedPreferencesUtil.Keys.DEMO_TEST_KEY, shareV);
         SecActivity.startAct(MainActivity.this);
     }
 

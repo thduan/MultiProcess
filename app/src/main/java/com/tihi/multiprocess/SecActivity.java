@@ -73,7 +73,7 @@ public class SecActivity extends FragmentActivity{
 
     @OnClick(R.id.test_share_btn)
     private void testShare(View view) {
-        Logger.log(TAG_PREFIX + ", share值：" + SharedPreferencesUtil.get(SharedPreferencesUtil.Keys.DEMO_TEST_KEY));
+        Logger.log(TAG_PREFIX + ", share读出来值：" + SharedPreferencesUtil.get(SharedPreferencesUtil.Keys.DEMO_TEST_KEY));
     }
 
     @OnClick(R.id.test_act_process_btn)
